@@ -9,8 +9,7 @@ import primerchas.demo.model.Elements;
 
 @RestController
 @RequestMapping("operations")
-public class ZadachaRestController
-{
+public class ZadachaRestController {
     private final LogicClass logicClass;
 
     public ZadachaRestController(LogicClass logicClass) {
@@ -18,8 +17,7 @@ public class ZadachaRestController
     }
 
     @PostMapping("/calculate")
-    public Double calculate(@RequestParam Float x, @RequestParam Float y, @RequestParam Character c)
-    {
+    public Double calculate(@RequestParam Float x, @RequestParam Float y, @RequestParam Character c) {
         Elements elements = new Elements(x, y, c);
         Double num = this.logicClass.operacija(elements);
         return num;

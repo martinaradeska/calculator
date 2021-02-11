@@ -8,8 +8,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor(access = AccessLevel.PUBLIC)
-public class Elements
-{
+public class Elements {
     private Float x;
     private Float y;
     private Character c;
